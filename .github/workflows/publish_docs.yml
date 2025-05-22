@@ -3,7 +3,7 @@ name: Build and Publish DocFX Docs
 on:
   push:
     branches:
-      - main  # o tu rama principal
+      - main  # Cambia si tu rama principal es otra
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '8.x'  # Asegúrate de usar la versión que usa tu proyecto
+        dotnet-version: '8.x'
 
     - name: Install DocFX
       run: |
@@ -24,13 +24,13 @@ jobs:
         echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore MyMath/Math.Lib.csproj
 
     - name: Build DocFX documentation
-      run: docfx docfx.json
+      run: docfx MyMath/docfx.json
 
     - name: Publish to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site  # Directorio de salida de DocFX
+        publish_dir: ./_site
