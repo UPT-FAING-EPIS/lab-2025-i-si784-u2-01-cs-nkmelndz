@@ -1,0 +1,28 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": ["**/*.csproj"],
+          "exclude": ["**/bin/**", "**/obj/**"]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": ["**/*.md", "toc.yml"]
+      },
+      {
+        "files": ["api/**.yml"],
+        "dest": "api"
+      }
+    ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "Documentación de Math.Lib"
+    }
+  }
+}

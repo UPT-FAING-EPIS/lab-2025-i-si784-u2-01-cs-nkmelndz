@@ -1,0 +1,36 @@
+name: Build and Publish DocFX Docs
+
+on:
+  push:
+    branches:
+      - main  # o tu rama principal
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.x'  # Asegúrate de usar la versión que usa tu proyecto
+
+    - name: Install DocFX
+      run: |
+        dotnet tool install -g docfx
+        echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build DocFX documentation
+      run: docfx docfx.json
+
+    - name: Publish to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site  # Directorio de salida de DocFX
