@@ -27,6 +27,7 @@ jobs:
         run: |
           cd MyMath
           dotnet tool install -g dotnet-reportgenerator-globaltool
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
           dotnet test --collect:"XPlat Code Coverage"
           ReportGenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:MyMath/Cobertura" -reporttypes:MarkdownSummaryGithub
 
@@ -34,6 +35,7 @@ jobs:
         run: |
           cd MyMath
           dotnet tool install -g dll2mmd
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
           dll2mmd -f Math.Lib/bin/Debug/net8.0/Math.Lib.dll -o disenio.md
 
       - name: Restore dependencies (opcional)
