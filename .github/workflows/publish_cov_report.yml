@@ -33,6 +33,15 @@ jobs:
           cd MyMath
           dotnet test --collect:"XPlat Code Coverage"
           reportgenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:Cobertura" -reporttypes:MarkdownSummaryGithub
+      
+      - name: Generar diagrama Mermaid con dll2mmd
+        run: |
+          cd MyMath
+          dotnet tool install -g dll2mmd
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+          export DOTNET_ROLL_FORWARD=Major
+          dotnet build Math.Lib/Math.Lib.csproj
+          dll2mmd -f Math.Lib/bin/Debug/net8.0/Math.Lib.dll -o disenio.md
 
       - name: (opcional) Restore dependencias
         run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj

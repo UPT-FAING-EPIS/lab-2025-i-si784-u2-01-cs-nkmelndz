@@ -31,22 +31,19 @@ jobs:
           export DOTNET_ROLL_FORWARD=Major
           dotnet build Math.Lib/Math.Lib.csproj
           dll2mmd -f Math.Lib/bin/Debug/net8.0/Math.Lib.dll -o disenio.md
-      - name: verfiicar diagrama Mermaid con dll2mmd
-        run: |
-          ls MyMath
 
-      # - name: Restore dependencies (opcional)
-      #   run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
+      - name: Restore dependencies (opcional)
+        run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
 
-      # - name: Generate metadata
-      #   run: docfx metadata MyMath/docfx.json
+      - name: Generate metadata
+        run: docfx metadata MyMath/docfx.json
 
-      # - name: Build DocFX documentation
-      #   run: docfx MyMath/docfx.json
+      - name: Build DocFX documentation
+        run: docfx MyMath/docfx.json
 
-      # - name: Publish to GitHub Pages
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     publish_dir: MyMath/_site
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: MyMath/_site
           
