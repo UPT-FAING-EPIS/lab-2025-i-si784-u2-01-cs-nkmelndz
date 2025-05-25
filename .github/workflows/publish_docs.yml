@@ -3,34 +3,34 @@ name: Build and Publish DocFX Docs
 on:
   push:
     branches:
-      - main  # Cambia si tu rama principal es otra
+      - main # Cambia esto si tu rama principal tiene otro nombre
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '8.x'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: "8.x"
 
-    - name: Install DocFX
-      run: |
-        dotnet tool install -g docfx
-        echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+      - name: Install DocFX
+        run: |
+          dotnet tool install -g docfx
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
-    - name: Restore dependencies
-      run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
+      - name: Restore dependencies (opcional)
+        run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
 
-    - name: Build DocFX documentation
-      run: docfx MyMath/docfx.json
+      - name: Build DocFX documentation
+        run: docfx MyMath/docfx.json
 
-    - name: Publish to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: MyMath/_site
