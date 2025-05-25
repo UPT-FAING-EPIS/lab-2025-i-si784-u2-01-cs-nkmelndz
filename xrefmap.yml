@@ -13,6 +13,22 @@ references:
   commentId: T:Math.Lib.Rooter
   fullName: Math.Lib.Rooter
   nameWithType: Rooter
+- uid: Math.Lib.Rooter.CubeRoot(System.Double)
+  name: CubeRoot(double)
+  href: Math.Lib.Rooter.html#Math_Lib_Rooter_CubeRoot_System_Double_
+  commentId: M:Math.Lib.Rooter.CubeRoot(System.Double)
+  name.vb: CubeRoot(Double)
+  fullName: Math.Lib.Rooter.CubeRoot(double)
+  fullName.vb: Math.Lib.Rooter.CubeRoot(Double)
+  nameWithType: Rooter.CubeRoot(double)
+  nameWithType.vb: Rooter.CubeRoot(Double)
+- uid: Math.Lib.Rooter.CubeRoot*
+  name: CubeRoot
+  href: Math.Lib.Rooter.html#Math_Lib_Rooter_CubeRoot_
+  commentId: Overload:Math.Lib.Rooter.CubeRoot
+  isSpec: "True"
+  fullName: Math.Lib.Rooter.CubeRoot
+  nameWithType: Rooter.CubeRoot
 - uid: Math.Lib.Rooter.SquareRoot(System.Double)
   name: SquareRoot(double)
   href: Math.Lib.Rooter.html#Math_Lib_Rooter_SquareRoot_System_Double_
