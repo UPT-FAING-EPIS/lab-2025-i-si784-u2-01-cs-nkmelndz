@@ -1,4 +1,9 @@
 {
+  "Cobertura/SummaryGithub.html": {
+    "href": "Cobertura/SummaryGithub.html",
+    "title": "Summary | Math.Lib",
+    "summary": "Summary Summary Generated on: 25/05/2025 - 01:04:21 Coverage date: 22/05/2025 - 11:51:24 - 22/05/2025 - 13:43:06 Parser: MultiReport (5x Cobertura) Assemblies: 1 Classes: 1 Files: 1 Line coverage: 100% (15 of 15) Covered lines: 15 Uncovered lines: 0 Coverable lines: 15 Total lines: 33 Branch coverage: 100% (8 of 8) Covered branches: 8 Total branches: 8 Method coverage: Feature is only available for sponsors Coverage Math.Lib - 100% Name Line Branch Math.Lib 100% 100% Math.Lib.Rooter 100% 100%"
+  },
   "Math.Lib.Rooter.html": {
     "href": "Math.Lib.Rooter.html",
     "title": "Class Rooter | Math.Lib",
@@ -38,6 +43,11 @@
     "href": "api/Math.Tests.html",
     "title": "Namespace Math.Tests | Math.Lib",
     "summary": "Namespace Math.Tests Classes RooterTests"
+  },
+  "disenio.html": {
+    "href": "disenio.html",
+    "title": "| Math.Lib",
+    "summary": "classDiagram class Rooter Rooter : +SquareRoot() Double"
   },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
