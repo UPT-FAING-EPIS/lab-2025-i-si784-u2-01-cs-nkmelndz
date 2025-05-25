@@ -1,0 +1,37 @@
+{
+  "api/Math.Lib.Rooter.html": {
+    "href": "api/Math.Lib.Rooter.html",
+    "title": "Class Rooter",
+    "summary": "Class Rooter Namespace Math.Lib Assembly Math.Lib.dll Clase que proporciona métodos para calcular raíces cuadradas. public class Rooter Inheritance object Rooter Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods SquareRoot(double) Calcula la raíz cuadrada de un número positivo utilizando el método de Newton-Raphson. public double SquareRoot(double input) Parameters input double Número del cual se desea obtener la raíz cuadrada. Debe ser positivo. Returns double La raíz cuadrada del número especificado. Exceptions ArgumentOutOfRangeException Se lanza cuando el valor de input es menor o igual a cero."
+  },
+  "api/Math.Lib.html": {
+    "href": "api/Math.Lib.html",
+    "title": "Namespace Math.Lib",
+    "summary": "Namespace Math.Lib Classes Rooter Clase que proporciona métodos para calcular raíces cuadradas."
+  },
+  "api/Math.Tests.RooterTests.html": {
+    "href": "api/Math.Tests.RooterTests.html",
+    "title": "Class RooterTests",
+    "summary": "Class RooterTests Namespace Math.Tests Assembly Math.Tests.dll [TestClass] public class RooterTests Inheritance object RooterTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BasicRooterTest() [TestMethod] public void BasicRooterTest() RooterTestNegativeInputx() [TestMethod] public void RooterTestNegativeInputx() RooterThrowsExceptionWithMessageOnNegativeInput() [TestMethod] public void RooterThrowsExceptionWithMessageOnNegativeInput() RooterValueRange() [TestMethod] public void RooterValueRange()"
+  },
+  "api/Math.Tests.html": {
+    "href": "api/Math.Tests.html",
+    "title": "Namespace Math.Tests",
+    "summary": "Namespace Math.Tests Classes RooterTests"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started",
+    "summary": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction",
+    "summary": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE.",
+    "summary": "This is the HOMEPAGE. Diagrama de Clases Pruebas"
+  }
+}
