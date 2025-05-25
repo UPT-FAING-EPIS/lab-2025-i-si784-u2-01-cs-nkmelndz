@@ -1,11 +1,9 @@
 name: Crear y Publicar NuGet
 
 on:
-  workflow_dispatch:
-    inputs:
-      codigo:
-        description: '2022074262'
-        required: true
+  push:
+    branches:
+      - main # Cambia esto si tu rama principal tiene otro nombre
 
 jobs:
   build-and-publish:
@@ -25,7 +23,7 @@ jobs:
 
       - name: Actualizar versión en csproj
         run: |
-          sed -i "s|<Version>.*</Version>|<Version>${{ github.event.inputs.codigo }}</Version>|" MyMath/Math.Lib/Math.Lib.csproj
+          sed -i "s|<Version>.*</Version>|<Version>20.22.07.4262</Version>|" MyMath/Math.Lib/Math.Lib.csproj
 
       - name: Compilar proyecto
         run: dotnet build MyMath/Math.Lib/Math.Lib.csproj --configuration Release --no-restore
@@ -41,7 +39,7 @@ jobs:
       - name: Crear Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v${{ github.event.inputs.codigo }}
-          name: "Release ${{ github.event.inputs.codigo }}"
+          tag_name: v2022074262
+          name: "Release 2022074262"
           files: |
             *.nupkg
