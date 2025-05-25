@@ -29,7 +29,7 @@ jobs:
           dotnet tool install -g dotnet-reportgenerator-globaltool
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
           dotnet test --collect:"XPlat Code Coverage"
-          ReportGenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:MyMath/Cobertura" -reporttypes:MarkdownSummaryGithub
+          reportgenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:MyMath/Cobertura" -reporttypes:MarkdownSummaryGithub
 
       - name: Diagrama de Clases
         run: |
