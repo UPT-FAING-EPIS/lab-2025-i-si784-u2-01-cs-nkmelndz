@@ -33,7 +33,7 @@ jobs:
           dll2mmd -f Math.Lib/bin/Debug/net8.0/Math.Lib.dll -o disenio.md
       - name: verfiicar diagrama Mermaid con dll2mmd
         run: |
-          ls
+          ls MyMath
 
       # - name: Restore dependencies (opcional)
       #   run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
