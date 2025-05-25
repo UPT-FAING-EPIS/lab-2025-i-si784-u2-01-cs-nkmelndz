@@ -24,7 +24,7 @@ jobs:
         echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
     - name: Restore dependencies
-      run: dotnet restore MyMath/Math.Lib.csproj
+      run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
 
     - name: Build DocFX documentation
       run: docfx MyMath/docfx.json
