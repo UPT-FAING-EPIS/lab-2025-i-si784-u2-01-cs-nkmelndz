@@ -3,19 +3,19 @@ sorted: true
 references:
 - uid: Math.Lib
   name: Math.Lib
-  href: api/Math.Lib.html
+  href: Math.Lib.html
   commentId: N:Math.Lib
   fullName: Math.Lib
   nameWithType: Math.Lib
 - uid: Math.Lib.Rooter
   name: Rooter
-  href: api/Math.Lib.Rooter.html
+  href: Math.Lib.Rooter.html
   commentId: T:Math.Lib.Rooter
   fullName: Math.Lib.Rooter
   nameWithType: Rooter
 - uid: Math.Lib.Rooter.SquareRoot(System.Double)
   name: SquareRoot(double)
-  href: api/Math.Lib.Rooter.html#Math_Lib_Rooter_SquareRoot_System_Double_
+  href: Math.Lib.Rooter.html#Math_Lib_Rooter_SquareRoot_System_Double_
   commentId: M:Math.Lib.Rooter.SquareRoot(System.Double)
   name.vb: SquareRoot(Double)
   fullName: Math.Lib.Rooter.SquareRoot(double)
@@ -24,71 +24,71 @@ references:
   nameWithType.vb: Rooter.SquareRoot(Double)
 - uid: Math.Lib.Rooter.SquareRoot*
   name: SquareRoot
-  href: api/Math.Lib.Rooter.html#Math_Lib_Rooter_SquareRoot_
+  href: Math.Lib.Rooter.html#Math_Lib_Rooter_SquareRoot_
   commentId: Overload:Math.Lib.Rooter.SquareRoot
   isSpec: "True"
   fullName: Math.Lib.Rooter.SquareRoot
   nameWithType: Rooter.SquareRoot
 - uid: Math.Tests
   name: Math.Tests
-  href: api/Math.Tests.html
+  href: Math.Tests.html
   commentId: N:Math.Tests
   fullName: Math.Tests
   nameWithType: Math.Tests
 - uid: Math.Tests.RooterTests
   name: RooterTests
-  href: api/Math.Tests.RooterTests.html
+  href: Math.Tests.RooterTests.html
   commentId: T:Math.Tests.RooterTests
   fullName: Math.Tests.RooterTests
   nameWithType: RooterTests
 - uid: Math.Tests.RooterTests.BasicRooterTest
   name: BasicRooterTest()
-  href: api/Math.Tests.RooterTests.html#Math_Tests_RooterTests_BasicRooterTest
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_BasicRooterTest
   commentId: M:Math.Tests.RooterTests.BasicRooterTest
   fullName: Math.Tests.RooterTests.BasicRooterTest()
   nameWithType: RooterTests.BasicRooterTest()
 - uid: Math.Tests.RooterTests.BasicRooterTest*
   name: BasicRooterTest
-  href: api/Math.Tests.RooterTests.html#Math_Tests_RooterTests_BasicRooterTest_
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_BasicRooterTest_
   commentId: Overload:Math.Tests.RooterTests.BasicRooterTest
   isSpec: "True"
   fullName: Math.Tests.RooterTests.BasicRooterTest
   nameWithType: RooterTests.BasicRooterTest
 - uid: Math.Tests.RooterTests.RooterTestNegativeInputx
   name: RooterTestNegativeInputx()
-  href: api/Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterTestNegativeInputx
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterTestNegativeInputx
   commentId: M:Math.Tests.RooterTests.RooterTestNegativeInputx
   fullName: Math.Tests.RooterTests.RooterTestNegativeInputx()
   nameWithType: RooterTests.RooterTestNegativeInputx()
 - uid: Math.Tests.RooterTests.RooterTestNegativeInputx*
   name: RooterTestNegativeInputx
-  href: api/Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterTestNegativeInputx_
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterTestNegativeInputx_
   commentId: Overload:Math.Tests.RooterTests.RooterTestNegativeInputx
   isSpec: "True"
   fullName: Math.Tests.RooterTests.RooterTestNegativeInputx
   nameWithType: RooterTests.RooterTestNegativeInputx
 - uid: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
   name: RooterThrowsExceptionWithMessageOnNegativeInput()
-  href: api/Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterThrowsExceptionWithMessageOnNegativeInput
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterThrowsExceptionWithMessageOnNegativeInput
   commentId: M:Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
   fullName: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput()
   nameWithType: RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput()
 - uid: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput*
   name: RooterThrowsExceptionWithMessageOnNegativeInput
-  href: api/Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterThrowsExceptionWithMessageOnNegativeInput_
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterThrowsExceptionWithMessageOnNegativeInput_
   commentId: Overload:Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
   isSpec: "True"
   fullName: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
   nameWithType: RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
 - uid: Math.Tests.RooterTests.RooterValueRange
   name: RooterValueRange()
-  href: api/Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterValueRange
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterValueRange
   commentId: M:Math.Tests.RooterTests.RooterValueRange
   fullName: Math.Tests.RooterTests.RooterValueRange()
   nameWithType: RooterTests.RooterValueRange()
 - uid: Math.Tests.RooterTests.RooterValueRange*
   name: RooterValueRange
-  href: api/Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterValueRange_
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterValueRange_
   commentId: Overload:Math.Tests.RooterTests.RooterValueRange
   isSpec: "True"
   fullName: Math.Tests.RooterTests.RooterValueRange
