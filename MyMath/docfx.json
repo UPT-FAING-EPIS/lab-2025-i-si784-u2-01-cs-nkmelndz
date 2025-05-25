@@ -4,41 +4,29 @@
     {
       "src": [
         {
-          "src": "../src",
-          "files": [
-            "**/*.csproj"
-          ]
+          "src": ".",
+          "files": ["**/*.csproj"]
         }
-      ],
-      "dest": "api"
+      ]
     }
   ],
   "build": {
     "content": [
       {
-        "files": [
-          "**/*.{md,yml}"
-        ],
-        "exclude": [
-          "_site/**"
-        ]
+        "files": ["**/*.{md,yml}"],
+        "exclude": ["_site/**"]
       }
     ],
     "resource": [
       {
-        "files": [
-          "images/**"
-        ]
+        "files": ["images/**"]
       }
     ],
     "output": "_site",
-    "template": [
-      "default",
-      "modern"
-    ],
+    "template": ["default", "modern"],
     "globalMetadata": {
-      "_appName": "",
-      "_appTitle": "",
+      "_appName": "Math.Lib",
+      "_appTitle": "Math.Lib",
       "_enableSearch": true,
       "pdf": true
     }
