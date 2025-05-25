@@ -32,9 +32,9 @@ jobs:
         run: dotnet pack MyMath/Math.Lib/Math.Lib.csproj --configuration Release --no-build --output .
 
       - name: Publicar en GitHub Packages
-        run: dotnet nuget push *.nupkg --source "github" --api-key "${{ secrets.GITHUB_TOKEN }}"
+        run: dotnet nuget push *.nupkg --source "github" --api-key "${{ secrets.GHTOKEN  }}"
         env:
-          NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUGET_AUTH_TOKEN: ${{ secrets.GHTOKEN  }}
 
       - name: Crear Release
         uses: softprops/action-gh-release@v2
