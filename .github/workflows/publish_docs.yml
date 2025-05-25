@@ -20,20 +20,20 @@ jobs:
 
       - name: Install DocFX
         run: |
-          dotnet tool install -g dll2mmd
           dotnet tool install -g docfx
-          dotnet tool install -g dotnet-reportgenerator-globaltool
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Pruebas Unitarias y Reporte de Cobertura
         run: |
           cd MyMath
+          dotnet tool install -g dotnet-reportgenerator-globaltool
           dotnet test --collect:"XPlat Code Coverage"
           ReportGenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:MyMath/Cobertura" -reporttypes:MarkdownSummaryGithub
 
       - name: Diagrama de Clases
         run: |
           cd MyMath
+          dotnet tool install -g dll2mmd
           dll2mmd -f Math.Lib/bin/Debug/net8.0/Math.Lib.dll -o disenio.md
 
       - name: Restore dependencies (opcional)
