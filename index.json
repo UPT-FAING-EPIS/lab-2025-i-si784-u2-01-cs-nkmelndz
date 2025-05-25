@@ -1,9 +1,4 @@
 {
-  "Cobertura/SummaryGithub.html": {
-    "href": "Cobertura/SummaryGithub.html",
-    "title": "Summary | Math.Lib",
-    "summary": "Summary Summary Generated on: 05/25/2025 - 16:08:30 Coverage date: 05/25/2025 - 16:08:29 Parser: Cobertura Assemblies: 1 Classes: 1 Files: 1 Line coverage: 100% (12 of 12) Covered lines: 12 Uncovered lines: 0 Coverable lines: 12 Total lines: 33 Branch coverage: 100% (4 of 4) Covered branches: 4 Total branches: 4 Method coverage: Feature is only available for sponsors Coverage Math.Lib - 100% Name Line Branch Math.Lib 100% 100% Math.Lib.Rooter 100% 100%"
-  },
   "Math.Lib.Rooter.html": {
     "href": "Math.Lib.Rooter.html",
     "title": "Class Rooter | Math.Lib",
