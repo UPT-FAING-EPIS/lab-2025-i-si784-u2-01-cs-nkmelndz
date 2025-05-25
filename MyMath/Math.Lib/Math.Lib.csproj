@@ -7,6 +7,9 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1591</NoWarn> <!-- Opcional: para evitar advertencias por miembros públicos sin
     documentación -->
+    <Version>0.0.0</Version>
+    <PackageId>Math.Lib</PackageId>
+    <Authors>Cesar Nikolas Camac Melendez</Authors>
   </PropertyGroup>
 
 </Project>
