@@ -23,14 +23,6 @@ jobs:
           dotnet tool install -g docfx
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
-      - name: Pruebas Unitarias y Reporte de Cobertura
-        run: |
-          cd MyMath
-          dotnet tool install -g dotnet-reportgenerator-globaltool
-          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-          dotnet test --collect:"XPlat Code Coverage"
-          reportgenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:MyMath/Cobertura" -reporttypes:MarkdownSummaryGithub
-
       - name: Generar diagrama con dll2mmd
         run: |
           cd MyMath

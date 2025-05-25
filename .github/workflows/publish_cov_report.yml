@@ -1,0 +1,51 @@
+name: Reporte de Cobertura
+
+on:
+  workflow_run:
+    workflows: ["Build and Publish DocFX Docs"]  # Nombre exacto del otro workflow
+    types:
+      - completed
+
+jobs:
+  build-and-deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Necesario si luego usamos ramas como gh-pages
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: "8.x"
+
+      - name: Install tools
+        run: |
+          dotnet tool install -g docfx
+          dotnet tool install -g dotnet-reportgenerator-globaltool
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+
+      - name: Ejecutar pruebas y generar cobertura
+        run: |
+          cd MyMath
+          dotnet test --collect:"XPlat Code Coverage"
+          reportgenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:Cobertura" -reporttypes:MarkdownSummaryGithub
+
+      - name: (opcional) Restore dependencias
+        run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
+
+      - name: Generar metadata DocFX
+        run: docfx metadata MyMath/docfx.json
+
+      - name: Construir documentación DocFX
+        run: docfx MyMath/docfx.json
+
+      - name: Deploy a GitHub Pages sin borrar archivos previos
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: MyMath/_site
+          keep_files: true  # <--- Esto evita borrar contenido anterior
