@@ -31,12 +31,14 @@ jobs:
           dotnet test --collect:"XPlat Code Coverage"
           reportgenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:MyMath/Cobertura" -reporttypes:MarkdownSummaryGithub
 
-      - name: Diagrama de Clases
+      - name: Generar diagrama con dll2mmd
         run: |
           cd MyMath
           dotnet tool install -g dll2mmd
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+          export DOTNET_ROLL_FORWARD=Major
           dll2mmd -f Math.Lib/bin/Debug/net8.0/Math.Lib.dll -o disenio.md
+        shell: bash
 
       - name: Restore dependencies (opcional)
         run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
