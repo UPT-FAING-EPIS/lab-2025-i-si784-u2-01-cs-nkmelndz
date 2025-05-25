@@ -26,6 +26,9 @@ jobs:
       - name: Restore dependencies (opcional)
         run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
 
+      - name: Generate metadata
+        run: docfx metadata MyMath/docfx.json
+
       - name: Build DocFX documentation
         run: docfx MyMath/docfx.json
 
