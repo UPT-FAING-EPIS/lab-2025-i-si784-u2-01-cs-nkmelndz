@@ -1,0 +1,11 @@
+{
+  "Math.Lib": "Math.Lib.yml",
+  "Math.Lib.Rooter": "Math.Lib.Rooter.yml",
+  "Math.Lib.Rooter.SquareRoot(System.Double)": "Math.Lib.Rooter.yml",
+  "Math.Tests": "Math.Tests.yml",
+  "Math.Tests.RooterTests": "Math.Tests.RooterTests.yml",
+  "Math.Tests.RooterTests.BasicRooterTest": "Math.Tests.RooterTests.yml",
+  "Math.Tests.RooterTests.RooterTestNegativeInputx": "Math.Tests.RooterTests.yml",
+  "Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput": "Math.Tests.RooterTests.yml",
+  "Math.Tests.RooterTests.RooterValueRange": "Math.Tests.RooterTests.yml"
+}

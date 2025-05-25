@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Math.Tests
+  commentId: N:Math.Tests
+  id: Math.Tests
+  children:
+  - Math.Tests.RooterTests
+  langs:
+  - csharp
+  - vb
+  name: Math.Tests
+  nameWithType: Math.Tests
+  fullName: Math.Tests
+  type: Namespace
+  assemblies:
+  - Math.Tests
+references:
+- uid: Math.Tests.RooterTests
+  commentId: T:Math.Tests.RooterTests
+  href: Math.Tests.RooterTests.html
+  name: RooterTests
+  nameWithType: RooterTests
+  fullName: Math.Tests.RooterTests

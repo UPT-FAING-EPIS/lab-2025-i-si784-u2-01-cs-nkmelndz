@@ -1,0 +1,480 @@
+### YamlMime:ManagedReference
+items:
+- uid: Math.Tests.RooterTests
+  commentId: T:Math.Tests.RooterTests
+  id: RooterTests
+  parent: Math.Tests
+  children:
+  - Math.Tests.RooterTests.BasicRooterTest
+  - Math.Tests.RooterTests.RooterTestNegativeInputx
+  - Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
+  - Math.Tests.RooterTests.RooterValueRange
+  langs:
+  - csharp
+  - vb
+  name: RooterTests
+  nameWithType: RooterTests
+  fullName: Math.Tests.RooterTests
+  type: Class
+  source:
+    remote:
+      path: MyMath/Math.Tests/RooterTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-01-cs-nkmelndz.git
+    id: RooterTests
+    path: Math.Tests/RooterTests.cs
+    startLine: 5
+  assemblies:
+  - Math.Tests
+  namespace: Math.Tests
+  syntax:
+    content: >-
+      [TestClass]
+
+      public class RooterTests
+    content.vb: >-
+      <TestClass>
+
+      Public Class RooterTests
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute.#ctor
+    arguments: []
+- uid: Math.Tests.RooterTests.BasicRooterTest
+  commentId: M:Math.Tests.RooterTests.BasicRooterTest
+  id: BasicRooterTest
+  parent: Math.Tests.RooterTests
+  langs:
+  - csharp
+  - vb
+  name: BasicRooterTest()
+  nameWithType: RooterTests.BasicRooterTest()
+  fullName: Math.Tests.RooterTests.BasicRooterTest()
+  type: Method
+  source:
+    remote:
+      path: MyMath/Math.Tests/RooterTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-01-cs-nkmelndz.git
+    id: BasicRooterTest
+    path: Math.Tests/RooterTests.cs
+    startLine: 8
+  assemblies:
+  - Math.Tests
+  namespace: Math.Tests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void BasicRooterTest()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub BasicRooterTest()
+  overload: Math.Tests.RooterTests.BasicRooterTest*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: Math.Tests.RooterTests.RooterValueRange
+  commentId: M:Math.Tests.RooterTests.RooterValueRange
+  id: RooterValueRange
+  parent: Math.Tests.RooterTests
+  langs:
+  - csharp
+  - vb
+  name: RooterValueRange()
+  nameWithType: RooterTests.RooterValueRange()
+  fullName: Math.Tests.RooterTests.RooterValueRange()
+  type: Method
+  source:
+    remote:
+      path: MyMath/Math.Tests/RooterTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-01-cs-nkmelndz.git
+    id: RooterValueRange
+    path: Math.Tests/RooterTests.cs
+    startLine: 18
+  assemblies:
+  - Math.Tests
+  namespace: Math.Tests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void RooterValueRange()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub RooterValueRange()
+  overload: Math.Tests.RooterTests.RooterValueRange*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: Math.Tests.RooterTests.RooterTestNegativeInputx
+  commentId: M:Math.Tests.RooterTests.RooterTestNegativeInputx
+  id: RooterTestNegativeInputx
+  parent: Math.Tests.RooterTests
+  langs:
+  - csharp
+  - vb
+  name: RooterTestNegativeInputx()
+  nameWithType: RooterTests.RooterTestNegativeInputx()
+  fullName: Math.Tests.RooterTests.RooterTestNegativeInputx()
+  type: Method
+  source:
+    remote:
+      path: MyMath/Math.Tests/RooterTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-01-cs-nkmelndz.git
+    id: RooterTestNegativeInputx
+    path: Math.Tests/RooterTests.cs
+    startLine: 32
+  assemblies:
+  - Math.Tests
+  namespace: Math.Tests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void RooterTestNegativeInputx()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub RooterTestNegativeInputx()
+  overload: Math.Tests.RooterTests.RooterTestNegativeInputx*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+- uid: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
+  commentId: M:Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
+  id: RooterThrowsExceptionWithMessageOnNegativeInput
+  parent: Math.Tests.RooterTests
+  langs:
+  - csharp
+  - vb
+  name: RooterThrowsExceptionWithMessageOnNegativeInput()
+  nameWithType: RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput()
+  fullName: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput()
+  type: Method
+  source:
+    remote:
+      path: MyMath/Math.Tests/RooterTests.cs
+      branch: main
+      repo: https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-01-cs-nkmelndz.git
+    id: RooterThrowsExceptionWithMessageOnNegativeInput
+    path: Math.Tests/RooterTests.cs
+    startLine: 46
+  assemblies:
+  - Math.Tests
+  namespace: Math.Tests
+  syntax:
+    content: >-
+      [TestMethod]
+
+      public void RooterThrowsExceptionWithMessageOnNegativeInput()
+    content.vb: >-
+      <TestMethod>
+
+      Public Sub RooterThrowsExceptionWithMessageOnNegativeInput()
+  overload: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput*
+  attributes:
+  - type: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute
+    ctor: Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute.#ctor
+    arguments: []
+references:
+- uid: Math.Tests
+  commentId: N:Math.Tests
+  href: Math.html
+  name: Math.Tests
+  nameWithType: Math.Tests
+  fullName: Math.Tests
+  spec.csharp:
+  - uid: Math
+    name: Math
+    href: Math.html
+  - name: .
+  - uid: Math.Tests
+    name: Tests
+    href: Math.Tests.html
+  spec.vb:
+  - uid: Math
+    name: Math
+    href: Math.html
+  - name: .
+  - uid: Math.Tests
+    name: Tests
+    href: Math.Tests.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Math.Tests.RooterTests.BasicRooterTest*
+  commentId: Overload:Math.Tests.RooterTests.BasicRooterTest
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_BasicRooterTest
+  name: BasicRooterTest
+  nameWithType: RooterTests.BasicRooterTest
+  fullName: Math.Tests.RooterTests.BasicRooterTest
+- uid: Math.Tests.RooterTests.RooterValueRange*
+  commentId: Overload:Math.Tests.RooterTests.RooterValueRange
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterValueRange
+  name: RooterValueRange
+  nameWithType: RooterTests.RooterValueRange
+  fullName: Math.Tests.RooterTests.RooterValueRange
+- uid: Math.Tests.RooterTests.RooterTestNegativeInputx*
+  commentId: Overload:Math.Tests.RooterTests.RooterTestNegativeInputx
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterTestNegativeInputx
+  name: RooterTestNegativeInputx
+  nameWithType: RooterTests.RooterTestNegativeInputx
+  fullName: Math.Tests.RooterTests.RooterTestNegativeInputx
+- uid: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput*
+  commentId: Overload:Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterThrowsExceptionWithMessageOnNegativeInput
+  name: RooterThrowsExceptionWithMessageOnNegativeInput
+  nameWithType: RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
+  fullName: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput

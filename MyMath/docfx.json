@@ -1,10 +1,13 @@
 {
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
   "metadata": [
     {
       "src": [
         {
-          "files": ["**/*.csproj"],
-          "exclude": ["**/bin/**", "**/obj/**"]
+          "src": "../src",
+          "files": [
+            "**/*.csproj"
+          ]
         }
       ],
       "dest": "api"
@@ -13,16 +16,31 @@
   "build": {
     "content": [
       {
-        "files": ["**/*.md", "toc.yml"]
-      },
-      {
-        "files": ["api/**.yml"],
-        "dest": "api"
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
       }
     ],
-    "dest": "_site",
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "_site",
+    "template": [
+      "default",
+      "modern"
+    ],
     "globalMetadata": {
-      "_appTitle": "Documentación de Math.Lib"
+      "_appName": "",
+      "_appTitle": "",
+      "_enableSearch": true,
+      "pdf": true
     }
   }
 }
