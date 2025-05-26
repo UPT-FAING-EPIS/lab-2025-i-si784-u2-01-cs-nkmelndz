@@ -1,13 +1,8 @@
 {
-  "Cobertura/SummaryGithub.html": {
-    "href": "Cobertura/SummaryGithub.html",
-    "title": "Summary | Math.Lib",
-    "summary": "Summary Summary Generated on: 05/25/2025 - 18:38:03 Coverage date: 05/25/2025 - 18:38:03 Parser: Cobertura Assemblies: 1 Classes: 1 Files: 1 Line coverage: 50% (12 of 24) Covered lines: 12 Uncovered lines: 12 Coverable lines: 24 Total lines: 47 Branch coverage: 50% (4 of 8) Covered branches: 4 Total branches: 8 Method coverage: Feature is only available for sponsors Coverage Math.Lib - 50% Name Line Branch Math.Lib 50% 50% Math.Lib.Rooter 50% 50%"
-  },
   "Math.Lib.Rooter.html": {
     "href": "Math.Lib.Rooter.html",
     "title": "Class Rooter | Math.Lib",
-    "summary": "Class Rooter Namespace Math.Lib Assembly Math.Lib.dll Clase que proporciona métodos para calcular raíces cuadradas. public class Rooter Inheritance object Rooter Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods CubeRoot(double) public double CubeRoot(double input) Parameters input double Returns double SquareRoot(double) Calcula la raíz cuadrada de un número positivo utilizando el método de Newton-Raphson. public double SquareRoot(double input) Parameters input double Número del cual se desea obtener la raíz cuadrada. Debe ser positivo. Returns double La raíz cuadrada del número especificado. Exceptions ArgumentOutOfRangeException Se lanza cuando el valor de input es menor o igual a cero."
+    "summary": "Class Rooter Namespace Math.Lib Assembly Math.Lib.dll Clase que proporciona métodos para calcular raíces cuadradas. public class Rooter Inheritance object Rooter Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods SquareRoot(double) Calcula la raíz cuadrada de un número positivo utilizando el método de Newton-Raphson. public double SquareRoot(double input) Parameters input double Número del cual se desea obtener la raíz cuadrada. Debe ser positivo. Returns double La raíz cuadrada del número especificado. Exceptions ArgumentOutOfRangeException Se lanza cuando el valor de input es menor o igual a cero."
   },
   "Math.Lib.html": {
     "href": "Math.Lib.html",
@@ -47,7 +42,7 @@
   "disenio.html": {
     "href": "disenio.html",
     "title": "| Math.Lib",
-    "summary": "classDiagram class Rooter Rooter : +SquareRoot() Double Rooter : +CubeRoot() Double"
+    "summary": "classDiagram class Rooter Rooter : +SquareRoot() Double"
   },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
