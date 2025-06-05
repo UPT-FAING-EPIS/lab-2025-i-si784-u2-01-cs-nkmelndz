@@ -1,14 +1,12 @@
 name: Reporte de Cobertura
 
 on:
-  workflow_run:
-    workflows: ["Build and Publish DocFX Docs"]  # Nombre exacto del otro workflow
-    types:
-      - completed
+  push:
+    branches: [main]
+  workflow_dispatch:
 
 jobs:
-  build-and-deploy:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+  cov-report:
     runs-on: ubuntu-latest
 
     steps:
