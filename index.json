@@ -1,9 +1,4 @@
 {
-  "Cobertura/SummaryGithub.html": {
-    "href": "Cobertura/SummaryGithub.html",
-    "title": "Summary | Math.Lib",
-    "summary": "Summary Summary Generated on: 05/26/2025 - 00:30:39 Coverage date: 05/26/2025 - 00:30:38 Parser: Cobertura Assemblies: 1 Classes: 1 Files: 1 Line coverage: 100% (12 of 12) Covered lines: 12 Uncovered lines: 0 Coverable lines: 12 Total lines: 34 Branch coverage: 100% (4 of 4) Covered branches: 4 Total branches: 4 Method coverage: Feature is only available for sponsors Coverage Math.Lib - 100% Name Line Branch Math.Lib 100% 100% Math.Lib.Rooter 100% 100%"
-  },
   "Math.Lib.Rooter.html": {
     "href": "Math.Lib.Rooter.html",
     "title": "Class Rooter | Math.Lib",
@@ -44,11 +39,6 @@
     "title": "Namespace Math.Tests | Math.Lib",
     "summary": "Namespace Math.Tests Classes RooterTests"
   },
-  "disenio.html": {
-    "href": "disenio.html",
-    "title": "| Math.Lib",
-    "summary": "classDiagram class Rooter Rooter : +SquareRoot() Double"
-  },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
     "title": "Getting Started | Math.Lib",
@@ -61,7 +51,7 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "This is the HOMEPAGE. | Math.Lib",
-    "summary": "This is the HOMEPAGE. Diagrama de Clases Pruebas"
+    "title": "Página Principal | Math.Lib",
+    "summary": "Bienvenido a la Página Principal Explora las siguientes secciones de tu proyecto: \uD83D\uDD2C Pruebas de la Biblioteca Matemática Revisa los resultados de las pruebas ejecutadas sobre los módulos de la biblioteca matemática. \uD83D\uDCCA Informe de Cobertura Consulta el reporte de cobertura de pruebas para evaluar la calidad del código."
   }
 }
