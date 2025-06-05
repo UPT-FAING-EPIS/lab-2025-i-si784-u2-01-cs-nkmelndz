@@ -51,7 +51,7 @@
   },
   "index.html": {
     "href": "index.html",
-    "title": "Página Principal | Math.Lib",
-    "summary": "Bienvenido a la Página Principal Explora las siguientes secciones de tu proyecto: \uD83D\uDD2C Pruebas de la Biblioteca Matemática Revisa los resultados de las pruebas ejecutadas sobre los módulos de la biblioteca matemática. \uD83D\uDCCA Informe de Cobertura Consulta el reporte de cobertura de pruebas para evaluar la calidad del código."
+    "title": "\uD83D\uDCD8 Documentación del Proyecto Math.Lib | Math.Lib",
+    "summary": "\uD83D\uDCD8 Documentación del Proyecto Math.Lib ¡Bienvenido! Esta es la documentación técnica del proyecto Math.Lib, donde encontrarás detalles sobre la lógica matemática implementada, las clases principales y los resultados de pruebas automatizadas. \uD83D\uDCC2 Secciones disponibles \uD83D\uDD2C Pruebas de la Biblioteca Matemática (Math.Lib): Revisión de los módulos y métodos evaluados mediante pruebas unitarias. \uD83D\uDCCA Informe de Cobertura de Código: Visualización del porcentaje de cobertura alcanzado por las pruebas. \uD83D\uDEE0️ Esta documentación fue generada automáticamente como parte del flujo de integración continua."
   }
 }
