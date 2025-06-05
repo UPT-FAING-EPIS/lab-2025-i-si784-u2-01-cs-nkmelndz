@@ -32,8 +32,8 @@ jobs:
         run: |
           cd MyMath
           dotnet test --collect:"XPlat Code Coverage"
-          reportgenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:Cobertura" -reporttypes:MarkdownSummaryGithub
-    
+          ReportGenerator "-reports:./*/*/*/coverage.cobertura.xml" "-targetdir:Cobertura" -reporttypes:HTML
+
       - name: Deploy a GitHub Pages sin borrar archivos previos
         uses: peaceiris/actions-gh-pages@v3
         with:

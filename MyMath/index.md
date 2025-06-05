@@ -1,14 +1,17 @@
 ---
 _layout: landing
-title: Página Principal
+title: 📘 Documentación del Proyecto Math.Lib
 ---
 
-# Bienvenido a la Página Principal
+# 📘 Documentación del Proyecto Math.Lib
 
-Explora las siguientes secciones de tu proyecto:
+¡Bienvenido! Esta es la documentación técnica del proyecto **Math.Lib**, donde encontrarás detalles sobre la lógica matemática implementada, las clases principales y los resultados de pruebas automatizadas.
 
-- 🔬 [Pruebas de la Biblioteca Matemática](Math.Lib.html)  
-  Revisa los resultados de las pruebas ejecutadas sobre los módulos de la biblioteca matemática.
+## 📂 Secciones disponibles
 
-- 📊 [Informe de Cobertura](cov-report)  
-  Consulta el reporte de cobertura de pruebas para evaluar la calidad del código.
+- 🔬 [Pruebas de la Biblioteca Matemática (`Math.Lib`)](Math.Lib.html): Revisión de los módulos y métodos evaluados mediante pruebas unitarias.
+- 📊 [Informe de Cobertura de Código](cov-report): Visualización del porcentaje de cobertura alcanzado por las pruebas.
+
+---
+
+> 🛠️ Esta documentación fue generada automáticamente como parte del flujo de integración continua.
