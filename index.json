@@ -12,7 +12,7 @@
   "Math.Tests.RooterTests.html": {
     "href": "Math.Tests.RooterTests.html",
     "title": "Class RooterTests | Math.Lib",
-    "summary": "Class RooterTests Namespace Math.Tests Assembly Math.Tests.dll [TestClass] public class RooterTests Inheritance object RooterTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BasicRooterTest() [TestMethod] public void BasicRooterTest() RooterTestNegativeInputx() [TestMethod] public void RooterTestNegativeInputx() RooterThrowsExceptionWithMessageOnNegativeInput() [TestMethod] public void RooterThrowsExceptionWithMessageOnNegativeInput() RooterValueRange() [TestMethod] public void RooterValueRange()"
+    "summary": "Class RooterTests Namespace Math.Tests Assembly Math.Tests.dll [TestClass] public class RooterTests Inheritance object RooterTests Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods BasicRooterTest() [TestMethod] public void BasicRooterTest() RooterTestNegativeInputx() [TestMethod] public void RooterTestNegativeInputx() RooterThrowsExceptionOnZeroInput() [TestMethod] public void RooterThrowsExceptionOnZeroInput() RooterThrowsExceptionWithMessageOnNegativeInput() [TestMethod] public void RooterThrowsExceptionWithMessageOnNegativeInput() RooterValueRange() [TestMethod] public void RooterValueRange()"
   },
   "Math.Tests.html": {
     "href": "Math.Tests.html",

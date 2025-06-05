@@ -67,6 +67,19 @@ references:
   isSpec: "True"
   fullName: Math.Tests.RooterTests.RooterTestNegativeInputx
   nameWithType: RooterTests.RooterTestNegativeInputx
+- uid: Math.Tests.RooterTests.RooterThrowsExceptionOnZeroInput
+  name: RooterThrowsExceptionOnZeroInput()
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterThrowsExceptionOnZeroInput
+  commentId: M:Math.Tests.RooterTests.RooterThrowsExceptionOnZeroInput
+  fullName: Math.Tests.RooterTests.RooterThrowsExceptionOnZeroInput()
+  nameWithType: RooterTests.RooterThrowsExceptionOnZeroInput()
+- uid: Math.Tests.RooterTests.RooterThrowsExceptionOnZeroInput*
+  name: RooterThrowsExceptionOnZeroInput
+  href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterThrowsExceptionOnZeroInput_
+  commentId: Overload:Math.Tests.RooterTests.RooterThrowsExceptionOnZeroInput
+  isSpec: "True"
+  fullName: Math.Tests.RooterTests.RooterThrowsExceptionOnZeroInput
+  nameWithType: RooterTests.RooterThrowsExceptionOnZeroInput
 - uid: Math.Tests.RooterTests.RooterThrowsExceptionWithMessageOnNegativeInput
   name: RooterThrowsExceptionWithMessageOnNegativeInput()
   href: Math.Tests.RooterTests.html#Math_Tests_RooterTests_RooterThrowsExceptionWithMessageOnNegativeInput
