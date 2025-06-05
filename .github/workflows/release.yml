@@ -1,4 +1,4 @@
-name: Actividad05 - Generar NuGetPackage
+name: NuGetPackage
 
 on:
   push:
