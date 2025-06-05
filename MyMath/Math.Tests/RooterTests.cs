@@ -59,5 +59,20 @@ namespace Math.Tests
             }
         }
 
+        [TestMethod]
+        public void RooterThrowsExceptionOnZeroInput()
+        {
+            Rooter rooter = new Rooter();
+            try
+            {
+                rooter.SquareRoot(0);
+                Assert.Fail("Se esperaba una excepción ArgumentOutOfRangeException al ingresar 0");
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+                StringAssert.Contains(ex.Message, "El valor ingresado es invalido, solo se puede ingresar números positivos");
+            }
+        }
+
     }
 }
