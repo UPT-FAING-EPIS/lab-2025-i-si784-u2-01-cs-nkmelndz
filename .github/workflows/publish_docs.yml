@@ -22,19 +22,7 @@ jobs:
         run: |
           dotnet tool install -g docfx
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-
-      - name: Generar diagrama Mermaid con dll2mmd
-        run: |
-          cd MyMath
-          dotnet tool install -g dll2mmd
-          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-          export DOTNET_ROLL_FORWARD=Major
-          dotnet build Math.Lib/Math.Lib.csproj
-          dll2mmd -f Math.Lib/bin/Debug/net8.0/Math.Lib.dll -o disenio.md
-
-      - name: Restore dependencies (opcional)
-        run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
-
+          
       - name: Generate metadata
         run: docfx metadata MyMath/docfx.json
 

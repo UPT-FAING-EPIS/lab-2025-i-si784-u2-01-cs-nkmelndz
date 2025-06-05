@@ -1,9 +1,14 @@
 ---
 _layout: landing
+title: Página Principal
 ---
 
-# This is the **HOMEPAGE**.
+# Bienvenido a la Página Principal
 
-## [Diagrama de Clases](disenio.md)
+Explora las siguientes secciones de tu proyecto:
 
-## [Pruebas](Cobertura/SummaryGithub.md)
+- 🔬 [Pruebas de la Biblioteca Matemática](Math.Lib.html)  
+  Revisa los resultados de las pruebas ejecutadas sobre los módulos de la biblioteca matemática.
+
+- 📊 [Informe de Cobertura](cov-report)  
+  Consulta el reporte de cobertura de pruebas para evaluar la calidad del código.

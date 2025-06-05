@@ -5,11 +5,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>1591</NoWarn> <!-- Opcional: para evitar advertencias por miembros públicos sin
-    documentación -->
-    <Version>0.0.0</Version>
-    <PackageId>Math.Lib</PackageId>
-    <Authors>Cesar Nikolas Camac Melendez</Authors>
+    <PackageId>MyMath.nkmelndz</PackageId>
+    <Version>20.2207.3262</Version>
+    <Authors>nkmelndz</Authors>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <Description>Paquete NuGet MyMathApp</Description>
+    <IsPackable>true</IsPackable>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-01-cs-nkmelndz</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/UPT-FAING-EPIS/lab-2025-i-si784-u2-01-cs-nkmelndz</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>
