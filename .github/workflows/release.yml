@@ -29,23 +29,23 @@ jobs:
         run: sed -i.bak "s|<Version>.*</Version>|<Version>${VERSION}</Version>|" MyMath/MyMath.Lib/MyMath.Lib.csproj
 
       - name: Clean sed backup file
-        run: rm MyMath/MyMath.Lib/MyMath.Lib.csproj.bak
+        run: rm MyMath/Math.Lib/Math.Lib.csproj.bak
 
       - name: Restore dependencies
-        run: dotnet restore MyMath/MyMath.Lib/MyMath.Lib.csproj
+        run: dotnet restore MyMath/Math.Lib/Math.Lib.csproj
 
       - name: Build the project
-        run: dotnet build MyMath/MyMath.Lib/MyMath.Lib.csproj --configuration Release
+        run: dotnet build MyMath/Math.Lib/Math.Lib.csproj --configuration Release
 
       - name: Pack the NuGet package
-        run: dotnet pack MyMath/MyMath.Lib/MyMath.Lib.csproj -c Release
+        run: dotnet pack MyMath/Math.Lib/Math.Lib.csproj -c Release
 
       - name: Publish package to GitHub Packages
-        run: dotnet nuget push MyMath/MyMath.Lib/bin/Release/*.nupkg --skip-duplicate --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --api-key ${{ secrets.GH_PACKAGES }}
+        run: dotnet nuget push MyMath/Math.Lib/bin/Release/*.nupkg --skip-duplicate --source "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json" --api-key ${{ secrets.GH_PACKAGES }}
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
-          files: "MyMath/MyMath.Lib/bin/Release/*.nupkg"
+          files: "MyMath/Math.Lib/bin/Release/*.nupkg"
