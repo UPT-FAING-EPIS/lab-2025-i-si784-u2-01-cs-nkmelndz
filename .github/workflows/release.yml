@@ -26,7 +26,7 @@ jobs:
         run: echo "VERSION=${GITHUB_REF#refs/tags/v}" >> $GITHUB_ENV
 
       - name: Set version in .csproj
-        run: sed -i.bak "s|<Version>.*</Version>|<Version>${VERSION}</Version>|" MyMath/MyMath.Lib/MyMath.Lib.csproj
+        run: sed -i.bak "s|<Version>.*</Version>|<Version>${VERSION}</Version>|" MyMath/Math.Lib/Math.Lib.csproj
 
       - name: Clean sed backup file
         run: rm MyMath/Math.Lib/Math.Lib.csproj.bak
