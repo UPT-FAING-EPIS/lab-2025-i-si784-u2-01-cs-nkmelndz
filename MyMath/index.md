@@ -10,7 +10,7 @@ title: 📘 Documentación del Proyecto Math.Lib
 ## 📂 Secciones disponibles
 
 - 🔬 [Pruebas de la Biblioteca Matemática (`Math.Lib`)](Math.Lib.html): Revisión de los módulos y métodos evaluados mediante pruebas unitarias.
-- 📊 [Informe de Cobertura de Código](cov-report): Visualización del porcentaje de cobertura alcanzado por las pruebas.
+- 📊 [Informe de Cobertura de Código](coverage): Visualización del porcentaje de cobertura alcanzado por las pruebas.
 
 ---
 

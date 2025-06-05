@@ -1,42 +1,46 @@
-name: Reporte de Cobertura
+name: Actividad03 - Publicar reporte
 
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  cov-report:
+  build-and-publish-coverage:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout del repositorio
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0  # Necesario si luego usamos ramas como gh-pages
 
-      - name: Setup .NET
+      - name: Instalar .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: "8.x"
+          dotnet-version: '8.0.x'
 
-      - name: Install tools
+      - name: Restaurar dependencias
+        run: dotnet restore ./MyMath/MyMath.sln
+
+      - name: Compilar solución
+        run: dotnet build ./MyMath/MyMath.sln --configuration Release --no-restore
+
+      - name: Ejecutar pruebas y recolectar cobertura
+        run: dotnet test ./MyMath/MyMath.sln --configuration Release --no-build --collect:"XPlat Code Coverage"
+
+      - name: Instalar ReportGenerator
         run: |
-          dotnet tool install -g docfx
           dotnet tool install -g dotnet-reportgenerator-globaltool
-          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+          dotnet tool install -g dotnet-stryker
 
-      - name: Ejecutar pruebas y generar cobertura
+      - name: Generar reporte HTML de cobertura
         run: |
-          cd MyMath
-          dotnet test --collect:"XPlat Code Coverage"
+          report_path=$(find . -type f -name 'coverage.cobertura.xml' | head -n 1)
           reportgenerator "-reports:$report_path" "-targetdir:MyMath/Cobertura" -reporttypes:Html
 
-      - name: Deploy a GitHub Pages sin borrar archivos previos
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Publicar en GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: MyMath/Cobertura
-          publish_branch: gh-pages
-          destination_dir: cov-report
-          keep_files: true  # <--- Esto evita borrar contenido anterior
+          publish_dir: ./MyMath/Cobertura
+          destination_dir: coverage
+          keep_files: true
